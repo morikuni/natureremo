@@ -14,6 +14,7 @@ type Appliance struct {
 	AirCon         *AirCon         `json:"aircon"`
 	TV             *TV             `json:"tv"`
 	Light          *Light          `json:"light"`
+	SmartMeter     *SmartMeter     `json:"smart_meter"`
 }
 
 // SignalByName gets a signal by name from Signals.
@@ -39,7 +40,8 @@ const (
 	// ApplianceTypeLight represents Light
 	ApplianceTypeLight ApplianceType = "LIGHT"
 	// ApplianceTypeIR represents a device which is controlled by infrared.
-	ApplianceTypeIR ApplianceType = "IR"
+	ApplianceTypeIR           ApplianceType = "IR"
+	ApplianceTypeELSmartMeter ApplianceType = "EL_SMART_METER"
 )
 
 // ApplianceModel is device information of appliance
